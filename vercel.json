@@ -1,13 +1,13 @@
 {
     "builds": [{
-        "src": "EMP_MNG_SYS/wsgi.py",
+        "src": "emp_mng_sys/wsgi.py",
         "use": "@vercel/python",
         "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
     }],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "EMP_MNG_SYS/wsgi.py"
+            "dest": "emp_mng_sys/wsgi.py"
         }
     ]
 }
